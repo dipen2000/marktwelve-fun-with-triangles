@@ -9,20 +9,24 @@
     <script src="./triangleHypotenuse.js" defer></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="./index.html">Is triangle?</a></li>
-            <li><a href="./triangleQuiz.html">Triangle quiz</a></li>
-            <li><a href="./triangleHypotenuse.html">Hypotenuse</a></li>
-            <li><a href="./triangleArea.html">Triangle area</a></li>
+    <nav class="navigation container">
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline"><a href="./index.html" class="link">Is triangle?</a></li>
+            <li class="list-item-inline"><a href="./triangleQuiz.html" class="link">Triangle quiz</a></li>
+            <li class="list-item-inline"><a href="./triangleHypotenuse.html" class="link link-active">Hypotenuse</a></li>
+            <li class="list-item-inline"><a href="./triangleArea.html" class="link">Triangle area</a></li>
         </ul>
     </nav>
-    <h1>Calculate Hypotenuse</h1>
-    <label for="sideOne">a : </label>
-    <input type="number" min="1" id="sideOne" placeholder="Enter the value of side one"/>
-    <label for="sideTwo">b : </label>
-    <input type="number" min="1" id="sideTwo" placeholder="Enter the value of side two"/>
-    <button id="hypotenuseBtn">Calculate Hypotenuse</button>
+    <h1 class="heading">Calculate Hypotenuse</h1>
+    <h2 class="heading">Hypotenuse of a triangle : sqrt(a^2 + b^2)</h2>
+    <div class="content">
+        <label for="sideOne">Side a : </label>
+        <input type="number" min="1" id="sideOne" placeholder="Enter the value of side one"/>
+        <label for="sideTwo">Side b : </label>
+        <input type="number" min="1" id="sideTwo" placeholder="Enter the value of side two"/>
+        <button id="hypotenuseBtn">Calculate Hypotenuse</button>
     <p class="message"></p>
+    </div>
+    
 </body>
 </html>

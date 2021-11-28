@@ -9,21 +9,24 @@
     <script src="./triangleArea.js" defer></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="./index.html">Is triangle?</a></li>
-            <li><a href="./triangleQuiz.html">Triangle quiz</a></li>
-            <li><a href="./triangleHypotenuse.html">Hypotenuse</a></li>
-            <li><a href="./triangleArea.html">Triangle area</a></li>
+    <nav class="navigation container">
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline"><a href="./index.html" class="link">Is triangle?</a></li>
+            <li class="list-item-inline"><a href="./triangleQuiz.html" class="link">Triangle quiz</a></li>
+            <li class="list-item-inline"><a href="./triangleHypotenuse.html" class="link">Hypotenuse</a></li>
+            <li class="list-item-inline"><a href="./triangleArea.html" class="link link-active">Triangle area</a></li>
         </ul>
     </nav>
-    <h1>Calculate Area</h1>
-    <h2>Area of a triangle : 1/2(Base*Height)</h2>
-    <label for="baseInput">Base(in cm) : </label>
-    <input id="baseInput" type="number" placeholder="Enter the base value" />
-    <label for="heightInput">Height(in cm) : </label>
-    <input id="heightInput" type="number" placeholder="Enter the height value" />
-    <button id="areaBtn">Check Area</button>
-    <p class="message"></p>
+    <h1 class="heading">Calculate Area</h1>
+    <h2 class="heading">Area of a triangle : 1/2*(Base*Height)</h2>
+    <div class="content">
+        <label for="baseInput">Base(in cm) : </label>
+        <input id="baseInput" type="number" placeholder="Enter the base value" />
+        <label for="heightInput">Height(in cm) : </label>
+        <input id="heightInput" type="number" placeholder="Enter the height value" />
+        <button id="areaBtn">Check Area</button>
+        <p class="message"></p>
+    </div>
+    
 </body>
 </html>

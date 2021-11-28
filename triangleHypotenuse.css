@@ -1,3 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root{
+    --primary-color : #161D6F;
+    --dark-grey : #6B7280;
+    --off-white : #F3F4F6;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+    margin : 0;
+    background-color : #C7FFD8;
+}
+
 input{
     display: block;
+}
+
+
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* border: 3px solid red; */
+}
+
+
+
+.link{
+    text-decoration: none;
+    padding : 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.list-non-bullet{
+    list-style: none;
+}
+
+.list-item-inline{
+    display : inline;
+    padding : 0rem 0.5rem;
+}
+
+.navigation{
+    background-color : var(--primary-color);
+    padding : 1rem;    
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.navigation .nav-brand{
+    font-weight: bold;
+    font-size: 2rem;
+    
+}
+
+.navigation .link{
+    color : white;
+}
+
+.navigation .nav-pills{
+    text-align: left;
+}
+
+.navigation .link-active{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.nav-brand{
+    color : white;
+}
+
+.heading{
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    /* border : 3px solid red; */
+    width : 50%;
+    margin : 3rem auto;
+    align-items: center;
+    justify-content : center;
+}
+
+label{
+    font-size: 1.2rem;
+}
+
+input{
+    width : 30%;
+    text-align: center;
+    margin : 1rem 0;
+    padding : 0.5rem;
+    outline : 0;
+    border : 3px solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+#hypotenuseBtn{
+    padding : 0.5rem 1rem;
+    outline : 0;
+    background-color : var(--primary-color);
+    border : 0;
+    border-radius: 10px;
+    color : white;
+    font-size: 1rem;
+    font-family: 'Roboto Slab', serif;
+    cursor : pointer;
+    margin : 1rem 0;
+}
+
+.message{
+    margin : 1rem 0;
+    font-weight : bold;
+    font-size: 1.2rem;
 }

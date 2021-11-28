@@ -8,7 +8,13 @@ hypotenuseBtn.addEventListener("click" , calculateHypotenuse);
 function calculateHypotenuse(){
     let sideOne = Number(sideOneInput.value)
     let sideTwo = Number(sideTwoInput.value);
-    let sum = Math.pow(sideOne , 2) + Math.pow(sideTwo , 2);
-    let hypotenuse = Math.sqrt(sum).toFixed(2);
-    message.innerText = `The Hypotenuse is ${hypotenuse}`;
+    if(sideOne === 0 || sideTwo === 0){
+        message.innerText = "Please fill both the fields correctly."
+    }
+    else{
+        let sum = Math.pow(sideOne , 2) + Math.pow(sideTwo , 2);
+        let hypotenuse = Math.sqrt(sum).toFixed(2);
+        message.innerText = `The Hypotenuse is ${hypotenuse}`;
+    }
+    
 }
