@@ -20,6 +20,9 @@ function isTriangle(angleOne , angleTwo , angleThree){
     if(angleOne === 0 || angleTwo === 0 || angleThree === 0){
         message.innerText = "Please fill all the fields."
     }
+    else if(angleOne < 0 || angleTwo < 0 || angleThree < 0){
+        message.innerText = "Please enter valid inputs";
+    }
     else if(sum === 180){
         message.innerText = "It is a triangle!";
     }

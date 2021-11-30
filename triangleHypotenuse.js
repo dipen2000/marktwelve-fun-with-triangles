@@ -11,6 +11,9 @@ function calculateHypotenuse(){
     if(sideOne === 0 || sideTwo === 0){
         message.innerText = "Please fill both the fields correctly."
     }
+    else if(sideOne < 0 || sideTwo < 0){
+        message.innerText = "Please enter valid inputs.";
+    }
     else{
         let sum = Math.pow(sideOne , 2) + Math.pow(sideTwo , 2);
         let hypotenuse = Math.sqrt(sum).toFixed(2);

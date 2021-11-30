@@ -11,6 +11,9 @@ function areaClickHandler(){
     if(baseValue === 0 || heightValue === 0){
         message.innerText = "Please fill both the fields correctly."
     }
+    else if(baseValue < 0 || heightValue < 0){
+        message.innerText = "Please enter valid inputs.";
+    }
     else{
         let area = (1/2)*(baseValue*heightValue).toFixed(2);
         message.innerText = `The area of the triangle is ${area}cm`;
